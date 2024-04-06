@@ -1,3 +1,8 @@
+# Tech stack
+- [Bright data](https://brightdata.com/) - A proxy mocking real users using browsers browsing web page/apps.
+- [cheerio](https://www.npmjs.com/package/cheerio) - A text parser using jQuery like syntax. 
+- [React responsive carousel](https://www.npmjs.com/package/react-responsive-carousel) - A React based responsive carousel component. 
+
 ## BrightData
 ### Web Unlocker
 1. This is the proxy we used from BrightData to scrape the other websites
