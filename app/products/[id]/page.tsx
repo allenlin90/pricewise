@@ -11,8 +11,8 @@ interface ProductDetailsProps {
   params: { id: string };
 }
 
-const ProductDetails = async ({ params }: ProductDetailsProps) => {
-  const product: Product = await getProductById(params.id);
+const ProductDetails = async ({ params: { id } }: ProductDetailsProps) => {
+  const product: Product = await getProductById(id);
 
   if (!product) redirect('/');
 
@@ -76,11 +76,12 @@ const ProductDetails = async ({ params }: ProductDetailsProps) => {
           <div className='product-info'>
             <div className='flex flex-col gap-2'>
               <p className='text-[34px] text-secondary font-bold'>
-                {product.currency}{' '}
+                {product.currency}
                 {formatNumber(product.currentPrice || product.originalPrice)}
               </p>
               <p className='text-[21px] text-black opacity-50 line-through'>
-                {product.currency} {product.originalPrice}
+                {product.currency}
+                {product.originalPrice}
               </p>
             </div>
             <div className='flex flex-col gap-4'>
@@ -127,21 +128,27 @@ const ProductDetails = async ({ params }: ProductDetailsProps) => {
                 title='Average Price'
                 iconSrc='/assets/icons/chart.svg'
                 value={`${product.currency} ${formatNumber(
-                  product.averagePrice || product.originalPrice
+                  product.averagePrice ||
+                    product.originalPrice ||
+                    product.currentPrice
                 )}`}
               />
               <PriceInfoCard
                 title='Highest Price'
                 iconSrc='/assets/icons/arrow-up.svg'
                 value={`${product.currency} ${formatNumber(
-                  product.highestPrice || product.originalPrice
+                  product.highestPrice ||
+                    product.originalPrice ||
+                    product.currentPrice
                 )}`}
               />
               <PriceInfoCard
                 title='Lowest Price'
                 iconSrc='/assets/icons/arrow-down.svg'
                 value={`${product.currency} ${formatNumber(
-                  product.lowestPrice || product.originalPrice
+                  product.lowestPrice ||
+                    product.originalPrice ||
+                    product.currentPrice
                 )}`}
               />
             </div>
