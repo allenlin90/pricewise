@@ -61,3 +61,15 @@ export async function getProductById(productId: string) {
     console.log(`Failed to get product: ${error.message}`);
   }
 }
+
+export async function getAllProducts() {
+  try {
+    connectToDB();
+
+    const products = await Product.find();
+
+    return products;
+  } catch (error: any) {
+    console.log(`Failed to get products: ${error.message}`);
+  }
+}
