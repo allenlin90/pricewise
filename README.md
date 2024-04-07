@@ -2,6 +2,8 @@
 - [Bright data](https://brightdata.com/) - A proxy mocking real users using browsers browsing web page/apps.
 - [cheerio](https://www.npmjs.com/package/cheerio) - A text parser using jQuery like syntax. 
 - [React responsive carousel](https://www.npmjs.com/package/react-responsive-carousel) - A React based responsive carousel component. 
+- [Headless UI React](https://www.npmjs.com/package/@headlessui/react) - Completely unstyled, fully accessible UI components working with Tailwind CSS.
+- [nodemailer](https://www.npmjs.com/package/nodemailer) - send emails from Node.js
 
 ## BrightData
 ### Web Unlocker
