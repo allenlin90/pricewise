@@ -114,10 +114,10 @@ const Modal = ({ productId }: ModalProps) => {
                         placeholder='Enter your email address'
                         className='dialog-input'
                       />
-                      <button type='submit' className='dialog-btn'>
-                        {isSubmitting ? 'Submitting...' : 'Track'}
-                      </button>
                     </div>
+                    <button type='submit' className='dialog-btn'>
+                      {isSubmitting ? 'Submitting...' : 'Track'}
+                    </button>
                   </form>
                 </div>
               </div>
