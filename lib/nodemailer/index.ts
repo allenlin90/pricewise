@@ -107,4 +107,5 @@ export const sendEmail = async (
 
     console.log('Email sent: ', info);
   });
+  console.log('trying to send email...');
 };
