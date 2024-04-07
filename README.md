@@ -9,3 +9,12 @@
 2. We only give a `solution` name without geo location targeting, premium domains, async requests, nor advanced options for custom headers and cookies. 
 3. We will refer to the `host` of the proxy scraper such as `brd.superproxy.io:22225`, `username`, and `password`.
 4. Note that we keep `username` and `password` in environment variables. 
+
+# Todo
+## Product details
+- Like on the product
+- Reviews count on the product
+- Percentage of buyers recommendation
+- Average price of a product
+- Highest price of a product
+- Lowest price of a product
