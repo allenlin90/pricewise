@@ -1,3 +1,7 @@
+# Features
+- Users can check products on `amazon` to track on price of a product and send email notification with cron job on daily basis. 
+- Cron job is triggered using `cron-job.org`. 
+
 # Tech stack
 - [Bright data](https://brightdata.com/) - A proxy mocking real users using browsers browsing web page/apps.
 - [cheerio](https://www.npmjs.com/package/cheerio) - A text parser using jQuery like syntax. 
@@ -21,3 +25,6 @@
 - Average price of a product
 - Highest price of a product
 - Lowest price of a product
+
+# Known issue on Vercel
+- `lib\nodemailer\index.ts` may have timeout (max 10 seconds for free `hobby` plan) on vercel serverless/edge function.
